@@ -10,7 +10,7 @@ def main():
     t1 = threading.Thread(target=download_file)
     t1.start()
     print("Main program is waiting...")
-    # t1.join()
+    t1.join()
     print("Main program continues.")
 
 main()
